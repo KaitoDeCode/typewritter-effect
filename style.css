@@ -1,0 +1,30 @@
+body{
+  background-color: #333;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+ 
+.typewritter h1{
+  color: white;
+  font-size: 50px;
+  overflow: hidden;
+  font-family: monospace;
+  border-right: 10px solid white;
+  animation: 
+      typewriting 2s steps(13,end),
+      kedip 1s ease infinite
+  ;
+}
+
+@keyframes typewriting{
+  from { width: 0;}
+  to{width: 100%;}
+}
+
+@keyframes kedip{
+  from {border-color: transparent;}
+  50% { border-color: #00Ac00 }
+  to {border-color: transparent;}
+  
+}
